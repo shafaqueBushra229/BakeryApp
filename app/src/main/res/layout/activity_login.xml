@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#5E3835"
+tools:context=".MainActivity">
+
+
+<ImageView
+    android:id="@+id/bgImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/e"
+    android:scaleType="centerCrop"/>
+
+<io.alterac.blurkit.BlurLayout
+    android:id="@+id/blurLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:blk_blurRadius="3"
+    app:blk_fps="0"
+    android:layout_centerInParent="true"
+    />
+
+</RelativeLayout>
